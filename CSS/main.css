@@ -1,0 +1,237 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    
+}
+/**Comentarios****************************************************/
+/**************NAVEGACIÓN**************/
+header{
+    width: 100%;
+    height: 60px;
+    
+}
+
+header nav {
+    /* Justificar a la derecha */
+    display: flex;
+    justify-content: flex-end;
+    ;
+}
+
+header nav .nav-right-section{
+    width: 30px;
+    /* Eliminar puntitos */
+    list-style: none;
+    /* Propiedad flex - sea responsivo y flexible */
+    display: flex;
+    justify-content: center;
+    /* Centrado verticalmente */
+    align-items: center;
+    height: auto;
+    
+}
+
+a{
+    /* Remueve líneas de abajo */
+    text-decoration: none;
+    
+}
+
+nav .nav-right-section a{
+    margin-right: 25px;
+    color: rgba(0,0,0,.87);
+    
+}
+
+nav .nav-right-section .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 20px;
+    height: 20px;
+    /* Escala la imagen al mayor tamaño posible sin recortarla ni estirarla. */
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+nav .nav-right-section img{
+    width: 35px;
+    height: 35px;
+    margin-left: 20px;
+    border-radius: 30px;
+}
+/******************************************************************************/
+/******************************************************************************/
+/******************************************************************************/
+/************** - BUSCADOR - MAIN -*********************************/
+
+main{
+    /*background-color: aqua;*/
+    margin-top: 150px;
+    text-align: center;
+    border-radius: 156px;
+}
+/* Sección logo */
+main .main-logo{
+    /*background-color: blue;*/
+    width: 530px;
+    /* 0 - no margen arriba y abajo
+    auto - izquierda y derecha se ajustan auto
+    */
+    margin: 0 auto;
+}
+main .main-logo img{
+    height: 120px;
+}
+main .main-input{
+    /*background-color: blueviolet;*/
+    width: 530px;
+    margin: 0 auto;
+    box-shadow: 5px 2px 6px black;
+    color: #3c4043;
+    border-radius: 156px;
+}
+main .main-input-container{
+    border: 2px solid #bdbdbd;
+    width: 525px;
+    border-radius: 156px;
+}
+main .main-input input{
+    border: none;
+    height: 40px;
+    outline: none;
+    width: 440px;
+    border-radius: 156px;
+}
+main .main-input-container:hover{
+    border-color: #b7b7b7;
+    box-shadow: 0 1px 6px 0px #20212447;
+    box-shadow: 5px 2px 6px black;
+    color: #8c8c8c;
+    
+    
+}
+main .main-input .search-icon{
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-position: center;
+    background-size: contain;
+    text-align: left;
+    height: 14px;
+    padding-left: 6%;
+    background-repeat: no-repeat;
+}
+main .main-input .micro-icon{
+    background-position: left;
+    background-size: contain;
+    text-align: left;
+    height: 164px;
+    width: 2px;
+    padding-left: 4%;
+    background-repeat: no-repeat;
+    background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+}
+main .main-input .cam-icon{
+    background-position: left;
+    background-size: contain;
+    text-align: left;
+    height: 14px;
+    padding-left: 0%;
+    padding-right: 19px;
+    background-repeat: no-repeat;
+    background-image:url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+}
+/**/
+.mexico{
+    border: 0px;
+    background-position: center;
+    background-size:auto;
+    text-align: center;
+    height: auto;
+    padding-right: 19px;
+    background-repeat: no-repeat;
+}
+/**/
+main .main-buttons{
+    /*background-color: aqua;*/
+    width: 530px;
+    margin: 0 auto;
+    border-radius: 156px;
+}
+main .main-buttons div{
+    display: inline-block;    
+    justify-content: left;
+}
+main .main-buttons button{
+    display: inline-block;
+    border: 1;
+    
+    /*background-color: #f8f9fa;*/
+    font-size: 18px;
+    background-color: #ffffff;
+    
+    height: 40px;
+    /* REdondeado de botones */
+    border-radius: 4px;
+    /* Margen interno */
+    padding: 0 15px;
+    /* Margen entre botones */
+    margin-right: 15px;
+    border-radius: 156px;
+    box-shadow: 2px 0.5px 3px black;
+    justify-content: left;
+}
+/* Aquí va el efecto hover de los botones */
+main .main-buttons button:hover{
+    color: #0cadce;
+    border: 1px;
+}
+.main-buttons button:active {
+    padding: 30px;
+    transition-duration: 2s;
+}
+.space{
+    width: 589px;
+    height: 50px;
+}
+table {
+    border: 1px;
+}
+/****************************************************/
+/****************************************************/
+/****************************************************/
+.bloques{
+    border: 0;
+    width: 1px;
+    border-radius: 0px;
+    background-position: left;
+    background-size: contain;
+    text-align: left;
+    height: auto;
+    padding-left: 6%;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-content: end;
+    gap: 0.999rem; /*separacion*/
+}
+@media (min-width: 768px) {
+    .bloques{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+.bloque{
+    text-align: left;
+}
+/*.bloque_imagen{
+    width: 100%;
+}*/
+.bloque_titulo{
+    margin: 0; /*le quitamos el margen*/
+    display: grid;
+    gap: 0.5rem;
+    font-size: smaller;
+    width: 9%;
+}
+/*h2{font-size: 3.2rem;}*/
+
